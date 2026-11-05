@@ -18,23 +18,62 @@
         </ul>
     </nav>
    </header>
-   <main>
-     <section aria-labelleadby="titulo-filtros">
-        <article>
-            <h1 id="titulo-cursos">Consulta de cursos</h1>
-            <D1>    
-             <dt>Ficha</dt>
-             <dd>100001</dd>
-             <dt>Programa</dt>
-             <dd>Análisis y Desarrollo de Software</dd>
-             <dt>Municipio</dt>
-             <dd>Puerto Asís</dd>
-             <dt>Aula</dt>
-             <dd>Salon 103 CAAA</dd>
-            </D1>
-            </D1>
-        </article>
-    </section>
+   <main> 
+    <section aria-label="Menu principal">
+        <h1 id="asignacion-curso">Formulario de Asignación</h1>
+        <form action="#" method="post">
+            <fieldset>
+                 <legend>Curso</legend>
+                 <label for="Ficha">Ficha</label>
+                 <select id="Ficha" name="Ficha" required>
+                    <option value="">--</option>
+                    <option value="100001">100001 Análisis y Desarrollo de Software</option>
+                    <option value="100002">100002 Análisis y Desarrollo de Software</option>
+                    <option value="100003">100003 Análisis y Desarrollo de Software</option>
+                 </select>
+            </fieldset>
+            <fieldset>
+                <legend>Ubicación</legend>
+                <label for="Municipio">Municipio</label>
+                <select id="Municipio" name="Municipio" required>
+                    <option value="">--</option>
+                    <option value="Puerto Asis">Puerto Asis</option>
+                    <option value="Mocoa">Mocoa</option>
+                    <option value="Orito">Orito</option>
+                </select>
+                <label for="Sede">sede</label>
+                <select id="Sede" name="Sede" required>
+                    <option value="">--</option>
+                    <option value="CAAA - 1">CAAA - 1</option>
+                    <option value="CAAA - 2">CAAA - 2</option>
+                    <option value="CAAA - 3">CAAA - 3</option>
+                </select>
+                <label for="Aula">Aula</label>
+                <select id="Aula" name="Aula" required>
+                    <option value="">--</option>
+                    <option value="101">101</option>
+                    <option value="102">102</option>
+                    <option value="103">103</option>
+                </select>
+            </fieldset> 
+            <fieldset>
+                <legend>Instructor</legend>
+                <label for="Instructor-Manual">Instructor Manual</label>
+                <input type="text" id="Instructor-Manual" name="Instructor-Manual" placeholder="Ingrese el nombre del instructor" required>
+                <br>
+                <label for="Instructor">Instructor</label>
+                <select id="Instructor" name="Instructor" required>
+                    <option value="">--</option>
+                    <option value="Instructor 1">Instructor 1</option>
+                    <option value="Instructor 2">Instructor 2</option>
+                    <option value="Instructor 3">Instructor 3</option>
+                    <option value="Instructor 4">Instructor 4</option>
+                </select>
+                <label for="inicio">Hora de inicio</label>
+                <input type="time" id="inicio" name="inicio" min="6:00" max="24:00" step="1800" aria-describedby="ayuda-horas" required>
+            </fieldset>
+            <button type="submit">Revisar asignación</button>
+        </form>
    </main>
    <aside></aside>
    <footer>
