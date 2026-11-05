@@ -16,4 +16,10 @@ PascalCase: TarjetaCurso.vue
 # Escritura de variables y funciones
 camelCase: cursosFiltrados, visorMapaMunicipio
 
+- Auto Rename Tag
+- html tag wrapper
+- Auto Close Tag
+ Rama configuracion/Juan_Camilo
+ pull
+ 
 W3C -> WWW
