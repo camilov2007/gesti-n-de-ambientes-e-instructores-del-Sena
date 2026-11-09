@@ -3,42 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asignación de cursos</title>
+    <title>Asignación | Gestion de ambientes putumayo</title>
 </head>
+
 <body> 
-    <header>
-    <p>Gestion de ambientes e instructores</p>
-    <nav aria-LabeL="Menu pricipal">
+     <a class="ir-arriba" href="#contenido">Ir arriba</a>
+   <header class="encabezado"> 
+    <p class="marca"><a href="es/index.html">Gestion de ambientes e instructores</a></p>
+    <nav aria-label="Menú principal">
         <ul>
-            <li><a href="../index.html">Cursos</a></li>
-            <li><a href="municipios.html">Disponibilidad</a></li>
-            <li><a href="municipios.html">Municipio</a></li>
-            <li><a href="consulta-cursos.html">Asignacion</a></li>
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="es/index.html" aria-current="page">inicio</a></li>
+            <li><a href="es/consulta-cursos.html">Cursos</a></li>
+            <li><a href="es/disponibilidad.html">Disponibilidad</a></li>
+            <li><a href="es/municipio.html">Municipio</a></li>
+            <li><a href="es/asignacion.html">Asignacion</a></li>
+          
         </ul>
     </nav>
    </header>
-   <main>
-     <section aria-labelleadby="titulo-filtros">
-        <article>
-            <h1 id="titulo-cursos">Consulta de cursos</h1>
-            <D1>    
-             <dt>Ficha</dt>
-             <dd>100001</dd>
-             <dt>Programa</dt>
-             <dd>Análisis y Desarrollo de Software</dd>
-             <dt>Municipio</dt>
-             <dd>Puerto Asís</dd>
-             <dt>Aula</dt>
-             <dd>Salon 103 CAAA</dd>
-            </D1>
-         <a href="detalle-curso.html">detalles del curso</a>
-         <a href="consulta-cursos.html"> Formulario de asignación</a>
-        </article>
-    </section>
+   <main id="contenido" class="contenido">
+    <h1>Asignación de ambientes e instructores</h1>
+        <form class="tarjeta_formulario" id="form_asignacion" action="#" method="post" novalidate>
+                <fieldset>
+                 <legend>Curso y ubicación</legend>
+                 <p class="ficha"></p>
+                 <label for="Ficha">Ficha</label>
+                 <select id="Ficha" name="Ficha" required aria-describedby="error-Ficha">
+                    <option value="">--</option>
+                    <option value="100001">100001 Análisis y Desarrollo de Software</option>
+                    <option value="100002">100002 cocina</option>
+                    <option value="100003">100003 tecnologo en conduccion vial</option>
+                 </select>
+                 <span class="error-campo" id="error-Ficha"></span>
+                </p>
+            
+                <p class="ficha">
+                <label for="Municipio">Municipio</label>
+                <select id="Municipio" name="Municipio" required>
+                    <option value="">--</option>
+                    <option value="Puerto Asis">Puerto Asis</option>
+                    <option value="Mocoa">Mocoa</option>
+                    <option value="Orito">Orito</option>
+                </select>
+                </p>
+
+                <label for="Sede">sede</label>
+                <select id="Sede" name="Sede" required>
+                    <option value="">--</option>
+                    <option value="CAAA - 1">CAAA - 1</option>
+                    <option value="CAAA - 2">CAAA - 2</option>
+                    <option value="CAAA - 3">CAAA - 3</option>
+                </select>
+                <label for="Aula">Aula</label>
+                <select id="Aula" name="Aula" required>
+                    <option value="">--</option>
+                    <option value="101">101</option>
+                    <option value="102">102</option>
+                    <option value="103">103</option>
+                </select>
+            </fieldset> 
+            <fieldset>
+                <legend>Instructor</legend>
+                <label for="Instructor-Manual">Instructor Manual</label>
+                <input type="text" id="Instructor-Manual" name="Instructor-Manual" placeholder="Ingrese el nombre del instructor" required>
+                <br>
+                <label for="Instructor">Instructor</label>
+                <select id="Instructor" name="Instructor" required>
+                    <option value="">--</option>
+                    <option value="Instructor 1">Instructor 1</option>
+                    <option value="Instructor 2">Instructor 2</option>
+                    <option value="Instructor 3">Instructor 3</option>
+                    <option value="Instructor 4">Instructor 4</option>
+                </select>
+                <label for="inicio">Hora de inicio</label>
+                <input type="time" id="inicio" name="inicio" min="6:00" max="24:00" step="1800" aria-describedby="ayuda-horas" required>
+            </fieldset>
+            <button type="submit">Revisar asignación</button>
+        </form>
    </main>
    <aside></aside>
-   <footer>
+   <footer class="pie">
     <p>Centro Agroforestal y Acuicola Arapaima - SENA Regional Putumayo</p>
    </footer>
     
