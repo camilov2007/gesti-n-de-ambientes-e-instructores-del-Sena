@@ -1,12 +1,12 @@
 .accesos{
     display: grid;
-    gap: VAR(--espaciado-3);
+    gap: VAR(--espacio-3);
     padding: 0;
     list-style: none;
 }
 .accesos a{
     display: block;
-    padding: VAR(--espaciado-4);
+    padding: VAR(--espacio-4);
     background: VAR(--color-superficie);
     border: 1px solid VAR(--color-primario);
     border-radius: var(--radio);
