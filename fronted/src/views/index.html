@@ -5,39 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de cursos | Gestion de ambientes</title>
-    <link rel="stylesheet" href="../componentes/estilos/variables.css">
+     <link rel="stylesheet" href="../estilos/variables.css">
+    <link rel="stylesheet" href="../estilos/base.css">
+    <link rel="stylesheet" href="../estilos/componentes.css">
+    <link rel="stylesheet" href="../estilos/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
 </head>
 
 <body>
-   <header>
-    <p>Gestion de ambientes e instructores</p>
-    <nav aria-LabeL="Menu pricipal">
-        <ul>
-            <li><a href="es/index.html">inicio</a></li>
-            <li><a href="es/consulta-cursos.html">Cursos</a></li>
-            <li><a href="es/disponibilidad.html">Disponibilidad</a></li>
-            <li><a href="es/municipio.html">Municipio</a></li>
-            <li><a href="es/asignacion.html">Asignacion</a></li>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+    <p class="marca"><a href="index.html"> Gestión de <span> Ambientes e Instructores</span></a></p>
+    <nav aria-label="Menu principal">
+        <ul class="menu">
+            <li><a href="es/index.html" aria-label="Inicio">inicio</a></li>
+            <li><a href="es/consulta-cursos.html" aria-label="Cursos">Cursos</a></li>
+            <li><a href="es/disponibilidad.html" aria-label="Disponibilidad">Disponibilidad</a></li>
+            <li><a href="es/municipios.html" aria-label="Municipios">Municipios</a></li>
+            <li><a href="es/asignacion.html" aria-label="Asignacion">Asignacion</a></li>
           
         </ul>
     </nav>
    </header>
-   <main>
+   <main id="contenido" class="contenido">
     <h1 id="titulo-cursos">Consulta de cursos, horarios, y ambientes</h1>
      <section aria-labelleadby="titulo-filtros">
        <h2>Accesos rápidos</h2>
-       <ul>
-        <li><a href="es/consulta-cursos.html">Buscar un curso por su ficha o programa</a></li>
-        <li><a href="es/municipio.html">Ver los cursos en el mapa de municipios</a></li>
-        <li><a href="es/disponibilidad.html">Horario semanal de la ficha</a></li>
-        <li><a href="es/asignacion.html">Asignar ambiente, instructorde instructores</a></li>
-        <l1i><a href="es/login.html">Iniciar sesión</a></li>
+       <ul class="accesos">
+        <li><a href="es/consulta-cursos.html" aria-label="Buscar curso">Buscar un curso por su ficha o programa</a></li>
+        <li><a href="es/municipios.html" aria-label="Municipios">Ver los cursos en el mapa de municipios</a></li>
+        <li><a href="es/disponibilidad.html" aria-label="Disponibilidad">Horario semanal de la ficha</a></li>
+        <li><a href="es/asignacion.html" aria-label="Asignacion">Asignar ambiente, instructorde instructores</a></li>
+        <li><a href="es/login.html" aria-label="Iniciar sesión">Iniciar sesión</a></li>
        </ul>
     </section>
 
    </main>
   
-   <footer>
+   <footer class="pie">
     <p>Centro Agroforestal y Acuicola Arapaima - SENA Regional Putumayo</p>
    </footer>
    <!-- <style>
