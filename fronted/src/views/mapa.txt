@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asignación de cursos</title>
-</head>
-<body> 
-    <header>
-    <p>Gestion de ambientes e instructores</p>
-    <nav aria-LabeL="Menu pricipal">
-        <ul>
-            <li><a href="../index.html">Cursos</a></li>
-            <li><a href="disponibilidad.html">Disponibilidad</a></li>
-            <li><a href="municipios.html">Municipio</a></li>
-            <li><a href="asignacion.html">Asignacion</a></li>
-            <li><a href="../index.html">Home</a></li>
-        </ul>
-    </nav>
-   </header>
-   <main>
-     <section aria-labelleadby="titulo-filtros">
-            <h1 id="titulo-cursos">Mapa de </h1>
-            <svg id="mapa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 616" role="group"
+<svg id="mapa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 616" role="group"
                 aria-labelledby="mapa-titulo">
                 <title id="mapa-titulo">Municipios del Putumayo</title>
                 <g id="Municipios" fill="#e5e7eb" stroke="#64748b" stroke-width="1" stroke-linejoin="round">
@@ -56,12 +33,3 @@
                     <text x="95.2" y="143.1">Santiago</text>
                  </g>
             </svg>  
-    </section>
-   </main>
-   <aside></aside>
-   <footer>
-    <p>Centro Agroforestal y Acuicola Arapaima - SENA Regional Putumayo</p>
-   </footer>
-    
-</body>
-</html>
