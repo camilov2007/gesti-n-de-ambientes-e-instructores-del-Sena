@@ -148,3 +148,9 @@ barra-filtros .campo{
     gap: var(--espacio-3);
     flex-wrap: wrap;
 }
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+
+}
