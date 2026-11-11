@@ -15,14 +15,14 @@
 <body> 
      <a class="Saltar" href="#contenido">Saltar al contenido</a>
    <header class="encabezado"> 
-    <p class="marca"><a href="es/index.html">Gestion de <span> ambientes e instructores</span></a></p>
+    <p class="marca"><a href="../index.html">Gestion de <span> ambientes e instructores</span></a></p>
     <nav aria-label="Menú principal">
-        <ul>
-            <li><a href="es/index.html" aria-current="page">inicio</a></li>
-            <li><a href="es/consulta-cursos.html" aria-label="Cursos">Cursos</a></li>
-            <li><a href="es/disponibilidad.html" aria-label="Disponibilidad">Disponibilidad</a></li>
-            <li><a href="es/municipios.html" aria-label="Municipios">Municipio</a></li>
-            <li><a href="es/asignacion.html" aria-label="Asignacion">Asignacion</a></li>
+        <ul class="menu">
+            <li><a href="../index.html" aria-current="page">inicio</a></li>
+            <li><a href="consulta-cursos.html" aria-label="Cursos">Cursos</a></li>
+            <li><a href="disponibilidad.html" aria-label="Disponibilidad">Disponibilidad</a></li>
+            <li><a href="municipios.html" aria-label="Municipios">Municipio</a></li>
+            <li><a href="asignacion.html" aria-label="Asignacion">Asignacion</a></li>
           
         </ul>
     </nav>
@@ -32,7 +32,7 @@
         <form class="tarjeta_formulario" id="form_asignacion" action="#" method="post" novalidate>
                 <fieldset>
                  <legend>Curso y ubicación</legend>
-                 <p class="ficha"></p>
+                 <p class="campo">
                  <label for="Ficha">Ficha</label>
                  <select id="Ficha" name="Ficha" required aria-describedby="error-Ficha">
                     <option value="">--</option>
@@ -43,7 +43,7 @@
                  <span class="error-ficha" id="error-Ficha"></span>
                 </p>
             
-                <p class="ficha">
+                <p class="campo">
                  <label for="Municipio">Municipio</label>
                  <select id="municipio" name="municipio" required  aria-describedby="error-municipio">
                      <option value="">--</option>
@@ -115,8 +115,10 @@
                 <input type="time" id="fin" name="fin" min="6:00" max="24:00" step="1800" required aria-describedby="error-fin"> <span class="error-fin" id="error-fin"></span>
             </fieldset>
             </p>
-             <button type="reset">Limpiar</button>
-            <button type="submit">Guardar asignación</button>
+            <p class="acciones">
+             <button type="reset" class="btn-secundario">Limpiar</button>
+            <button type="submit" class="btn-primario">Guardar asignación</button>
+            </p>
         </form>
    </main>
    <aside></aside>
